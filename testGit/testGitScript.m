@@ -1,3 +1,4 @@
+import git.*
 disp('Git Test done successfully');
 a = git('show');
 disp(a);
