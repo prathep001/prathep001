@@ -5,6 +5,7 @@ classdef simModelTest < matlab.unittest.TestCase
     
     methods (TestClassSetup)
         function loadModel(testCase)
+            %simple
             [testDir,~,~] = fileparts(mfilename('fullpath'));
             modelDir= [testDir '\ModelFile'];
             addpath(modelDir);
