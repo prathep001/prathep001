@@ -1,6 +1,6 @@
 classdef simModelTest < matlab.unittest.TestCase
     properties
-        model = 'sf_car';
+        model = 'sim_autotrans';
     end
     
     methods (TestClassSetup)
