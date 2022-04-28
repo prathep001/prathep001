@@ -1,6 +1,8 @@
 import git.*
 disp('Git Test done successfully');
-a = git('show');
+[a,~,~] = fileparts(mfilename('fullpath'));
 disp(a);
-b = which('sampleMScript.m');
-disp(b);
+[aa,~,~] = fileparts(a);
+cd(aa)
+[status,~] = dos('git show');
+disp(status);
